@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background:  #051355;;">
+    <style>
+        #container {
+            position: absolute;
+            background: linear-gradient(135deg, blue, #680c63);
+            width: 300px;
+            height: 400px;
+            box-shadow: 5px 5px 20px 5px #0c0a0a;
+            top: 100px;
+            left: 490px;
+            align-items: center;
+            text-align: center;
+            border-radius: 40px;
+
+        }
+
+        .counterw {
+            color: white;
+            position: absolute;
+            left: 90px;
+            top: 5px;
+            font-family: sans-serif;
+        }
+
+        .display {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            outline: none;
+            top: 90px;
+            left: 70px;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            background: #150c69;
+            text-align: center;
+            font-size: 40px;
+
+
+            color: white;
+            border-radius: 40px;
+            box-shadow: inset 5px 5px 20px 0px rgb(0, 0, 0);
+        }
+
+        .button {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 40px;
+            font-size: 30px;
+            font-family: sans-serif;
+            background: linear-gradient(135deg, #680c63, blue);
+            box-shadow: inset 5px 5px 20px 0px rgb(0, 0, 0);
+            color: white;
+            top: 250px;
+        }
+
+        #plus {
+            left: 40px;
+
+        }
+
+        #minus {
+            left: -40px;
+        }
+
+        .restart {
+            top: 270px;
+            width: 100px;
+            height: 40px;
+            color: white;
+            font-family: sans-serif;
+            border-radius: 10px;
+            position: relative;
+            background: linear-gradient(135deg, #680c63, blue);
+
+            box-shadow: inset 5px 5px 20px 0px rgb(0, 0, 0);
+
+
+        }
+
+        .ww {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            position: absolute;
+            top: 500px;
+            left: 600px;
+        }
+
+        @media (max-width:1080px) {
+            #container {
+                position: fixed;
+                position: absolute;
+                left: 30px;
+                width: 300px;
+                top: 100px;
+                height: 400px;
+
+            }
+
+            .counterw {
+                position: relative;
+                left: 0px;
+                top: 10px;
+                font-size: 30px;
+            }
+
+            .display {
+                position: absolute;
+                width: 170px;
+                height: 150px;
+                border-radius: 30px;
+                top: 80px;
+                left: 65px;
+                text-align: center;
+                font-size: 30px;
+                cursor: pointer;
+                text-align: center;
+                font-size: 40px;
+
+
+
+
+
+
+
+            }
+
+            .numberdis {
+                position: relative;
+                top: 20px;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            .button {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                border-radius: 40px;
+                font-size: 20px;
+                font-family: sans-serif;
+                background: linear-gradient(135deg, #680c63, blue);
+                box-shadow: inset 1px 1px 2px 0px rgb(0, 0, 0);
+                color: white;
+                top: 150px;
+
+            }
+
+            #plus {
+                left: 60px;
+
+            }
+
+            #minus {
+                left: -60px;
+            }
+
+
+            .restart {
+                top: 150px;
+                width: 100px;
+                height: 40px;
+                color: white;
+                font-family: sans-serif;
+                border-radius: 10px;
+                position: relative;
+                font-size: 15px;
+                background: linear-gradient(135deg, #680c63, blue);
+                box-shadow: inset 1px 1px 10px 0px rgb(0, 0, 0);
+            }
+
+            .ww {
+                position: absolute;
+                left: 135px;
+                top: 430px;
+            }
+        }
+    </style>
+
+    <div id="container" class="container">
+        <h2 class="counterw">COUNTER</h2><br>
+        <div id="displays" class="display">
+            <h2 id="numberdis">0</h2>
+        </div>
+        <button id="minus" class="button">-</button>
+        <button id="plus" class="button">+</button><br>
+        <button id="restart" class="restart">RESTART</button>
+
+    </div>
+    <br>
+    <h1 class="ww">oo01</h1>
+    <script src="counter1.js"></script>
+</body>
+
+</html>
